@@ -4,7 +4,7 @@ export const safeDocument =
 
 export const iframeWindowReadyEvent = 'iframeWindowReady';
 
-export declare enum IframeLoginTypes {
+export enum IframeLoginTypes {
   metamask = "metamask",
   passkey = "passkey",
   tiktok = "tiktok",
