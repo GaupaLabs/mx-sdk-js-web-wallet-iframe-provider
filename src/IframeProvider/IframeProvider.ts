@@ -57,7 +57,7 @@ export class IframeProvider extends CrossWindowProvider {
   }
 
   public override setWalletUrl(url: string): CrossWindowProvider {
-    const newUrl = `${url}/?iframeProviderLoginType=${this.loginType}`;
+    const newUrl = `${url}?iframeProviderLoginType=${this.loginType}`;
     return super.setWalletUrl(newUrl);
   }
 
