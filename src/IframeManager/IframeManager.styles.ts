@@ -12,7 +12,7 @@ export const containerStyle = `
     transition: all 400ms ease;
     width: 420px;
     max-width: calc(100vw - 8px);
-    background: black;
+    background: #351836;
     overflow: hidden;
     top: 64px;
   `;
@@ -54,7 +54,7 @@ export const headingElementStyle = `
 export const titleElementStyle = `
   font-size: 20px;
   font-family: 'Roobert Medium', sans-serif;
-  color: #E5E5E5;
+  color: #e4dbc9;
   transition: all 400ms ease;
   line-height: 1;
   user-select: none;
