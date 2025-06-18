@@ -38,12 +38,6 @@ export class IframeManager extends WindowManager {
     type,
     payload
   }: PostMessageParamsType<T>): Promise<PostMessageReturnType<T>> {
-    this.hasHandshake = await this.handshake(type);
-
-    if (!this.hasHandshake) {
-      throw new Error('Cannot establish handshake');
-    }
-
     this.walletWindow?.postMessage(
       {
         type,
