@@ -47,7 +47,7 @@ export const headingElementStyle = `
   gap: 12px;
   width: 100%;
   position: relative;
-  padding: 0 24px;
+  padding: 0 12px;
   height: 80px;
 `;
 

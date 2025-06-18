@@ -24,20 +24,20 @@ const LoginBranding = {
       title: 'Passkey Login'
   },
   [IframeLoginTypes.tiktok]: {
-      icon: '<img src="https://dev-auth.gaupa.xyz/static/login-logo-square.svg" class="gaupa center" width="50" alt="" data-hires-status="pending">',
-      title: 'Gaupa Login (TikTok)'
+      icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
+      title: 'Gaupa Login'
     },
   [IframeLoginTypes.twitter]: {
-      icon: '<img src="https://dev-auth.gaupa.xyz/static/login-logo-square.svg" class="gaupa center" width="50" alt="" data-hires-status="pending">',
-      title: 'Gaupa Login (X)'
+      icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
+      title: 'Gaupa Login'
     },
   [IframeLoginTypes.google]: {
-      icon: '<img src="https://dev-auth.gaupa.xyz/static/login-logo-square.svg" class="gaupa center" width="50" alt="" data-hires-status="pending">',
-      title: 'Gaupa Login (Google)'
+      icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
+      title: 'Gaupa Login'
     },
   [IframeLoginTypes.mail]: {
-      icon: '<img src="https://dev-auth.gaupa.xyz/static/login-logo-square.svg" class="gaupa center" width="50" alt="" data-hires-status="pending">',
-      title: 'Gaupa Login (Email)'
+      icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
+      title: 'Gaupa Login'
     }
 };
 
@@ -59,7 +59,7 @@ export class IframeProviderContentWindow
   private readonly title: HTMLDivElement;
   private readonly body: HTMLDivElement;
   private readonly iframe: HTMLIFrameElement;
-  private loginType = IframeLoginTypes.google;
+  private loginType = IframeLoginTypes.metamask;
 
   public constructor(props: IframeProviderContentWindowProps) {
     const { id, url, anchor, loginType } = props;
@@ -96,10 +96,10 @@ export class IframeProviderContentWindow
   }
 
   private buildHeader() {
-    const iframeIcon = LoginBranding[this.loginType].icon || '<img src="https://dev-auth.gaupa.xyz/static/login-logo-square.svg" class="gaupa center" width="50" alt="" data-hires-status="pending">';
+    const iframeIcon = LoginBranding[this.loginType].icon || '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">';
 
     const toggleIcon =
-      '<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right-to-line" class="svg-inline--fa fa-arrow-right-to-line " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 20px;color: #e4dbc9;"><path fill="currentColor" d="M448 88c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 336c0 13.3 10.7 24 24 24s24-10.7 24-24l0-336zM312.4 273.5c4.8-4.5 7.6-10.9 7.6-17.5s-2.7-12.9-7.6-17.5l-136-128c-9.7-9.1-24.8-8.6-33.9 1s-8.6 24.8 1 33.9L235.5 232 152 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l128 0 83.5 0-91.9 86.5c-9.7 9.1-10.1 24.3-1 33.9s24.3 10.1 33.9 1l136-128z"></path></svg>';
+    '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" zoomAndPan="magnify" viewBox="0 0 36.75 36.000001" height="48" preserveAspectRatio="xMidYMid meet" version="1.2"><defs><clipPath id="4bb5922db7"><path d="M 0.375 0 L 36.132812 0 L 36.132812 35.027344 L 0.375 35.027344 Z M 0.375 0 "/></clipPath><clipPath id="91c1eca6cd"><path d="M 0.375 0 L 35.554688 0 L 35.554688 34.304688 L 0.375 34.304688 Z M 0.375 0 "/></clipPath><clipPath id="8ae80ca073"><path d="M 13 7.824219 L 22.957031 7.824219 L 22.957031 26.796875 L 13 26.796875 Z M 13 7.824219 "/></clipPath></defs><g id="64069603f0"><g clip-rule="nonzero" clip-path="url(#4bb5922db7)"><path style=" stroke:none;fill-rule:nonzero;fill:#ffffff;fill-opacity:1;" d="M 0.375 0 L 36.132812 0 L 36.132812 35.027344 L 0.375 35.027344 Z M 0.375 0 "/></g><g clip-rule="nonzero" clip-path="url(#91c1eca6cd)"><path style=" stroke:none;fill-rule:nonzero;fill:#e4dbc9;fill-opacity:1;" d="M 0.375 0 L 35.617188 0 L 35.617188 34.304688 L 0.375 34.304688 Z M 0.375 0 "/></g><g clip-rule="nonzero" clip-path="url(#8ae80ca073)"><path style=" stroke:none;fill-rule:evenodd;fill:#000000;fill-opacity:1;" d="M 22.785156 18.054688 L 14.777344 26.386719 C 14.386719 26.792969 13.75 26.792969 13.359375 26.386719 C 12.96875 25.980469 12.96875 25.332031 13.359375 24.921875 L 20.671875 17.316406 L 13.359375 9.710938 C 12.96875 9.304688 12.96875 8.644531 13.359375 8.238281 C 13.75 7.832031 14.386719 7.832031 14.777344 8.238281 L 22.792969 16.582031 C 23.1875 16.988281 23.1875 17.648438 22.785156 18.054688 Z M 22.785156 18.054688 "/></g></g></svg>';
 
     const headingElement = safeDocument.createElement?.('div');
     const iframeIconElement = safeDocument.createElement?.('div');
