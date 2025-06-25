@@ -1,6 +1,6 @@
 {
   "name": "@gaupa/sdk-web-wallet-iframe-provider-gaupa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Signing provider for dApps: Web Wallet Iframe Provider for Gaupa Login. Forked from @multiversx/sdk-web-wallet-iframe-provider",
   "main": "out/index.js",
   "types": "out/index.d.js",
