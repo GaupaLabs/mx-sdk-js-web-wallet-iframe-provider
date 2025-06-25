@@ -28,7 +28,7 @@ export type IframeProviderEventDataType<T extends WindowProviderResponseEnums> =
 export class IframeProvider extends CrossWindowProvider {
   protected static _instance: IframeProvider | null = null;
   protected readonly windowManager: IframeManager;
-  private loginType: IframeLoginTypes = IframeLoginTypes.metamask;
+  private loginType: IframeLoginTypes = IframeLoginTypes.google;
 
   public constructor() {
     super();

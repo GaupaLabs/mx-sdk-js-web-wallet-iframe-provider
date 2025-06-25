@@ -5,9 +5,7 @@ export const containerStyle = `
     right: 0;
     left: auto;
     border: none;
-    border-radius: 12px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0;
     height: calc(100vh - 8px - 64px);
     transition: all 400ms ease;
     width: 420px;
@@ -21,7 +19,7 @@ export const headerStyle = `
     color: #fff;
     cursor: pointer;
     height: 80px;
-    border-radius: 12px;
+    border-radius: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;

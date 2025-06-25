@@ -5,10 +5,10 @@ export const safeDocument =
 export const iframeWindowReadyEvent = 'iframeWindowReady';
 
 export enum IframeLoginTypes {
-  metamask = "metamask",
-  passkey = "passkey",
-  tiktok = "tiktok",
-  twitter = "twitter",
-  google = "google",
-  mail = "mail"
+  metamask = 'metamask',
+  passkey = 'passkey',
+  tiktok = 'tiktok',
+  twitter = 'twitter',
+  google = 'google',
+  mail = 'mail'
 }
