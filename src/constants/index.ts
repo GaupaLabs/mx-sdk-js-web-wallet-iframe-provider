@@ -10,5 +10,6 @@ export enum IframeLoginTypes {
   tiktok = 'tiktok',
   twitter = 'twitter',
   google = 'google',
-  mail = 'mail'
+  mail = 'mail',
+  discord = 'discord'
 }

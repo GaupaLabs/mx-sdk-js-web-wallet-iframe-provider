@@ -38,6 +38,10 @@ const LoginBranding = {
   [IframeLoginTypes.mail]: {
     icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
     title: 'Gaupa Login'
+  },
+  [IframeLoginTypes.discord]: {
+    icon: '<img src="https://vibe.gaupa.xyz/static/GaupaVibeTransparent.png" class="gaupa center" width="60" alt="" data-hires-status="pending">',
+    title: 'Gaupa Login'
   }
 };
 

@@ -17,6 +17,7 @@ This iframe provider supports multiple login methods:
 - **Gaupa Login** - Social login integration for:
   - TikTok
   - Twitter  
+  - Discord
   - Google
   - Email
 
@@ -79,6 +80,7 @@ provider.setLoginType(IframeLoginTypes.tiktok);
 provider.setLoginType(IframeLoginTypes.twitter);
 provider.setLoginType(IframeLoginTypes.google);
 provider.setLoginType(IframeLoginTypes.mail);
+provider.setLoginType(IframeLoginTypes.discord);
 ```
 
 ### Building the library
