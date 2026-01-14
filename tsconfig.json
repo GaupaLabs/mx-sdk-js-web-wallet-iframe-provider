@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "module": "CommonJS",
+        "module": "esnext",
         "target": "es2015",
         "outDir": "out",
         "lib": [
@@ -21,6 +21,11 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "useDefineForClassFields": false,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["node_modules/*", "src/*"]
+        }
     },
     "include": [
         "src/**/*"

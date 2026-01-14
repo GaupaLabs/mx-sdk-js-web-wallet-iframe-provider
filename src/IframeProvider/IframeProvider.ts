@@ -28,7 +28,7 @@ export type IframeProviderEventDataType<T extends WindowProviderResponseEnums> =
 export class IframeProvider extends CrossWindowProvider {
   protected static _instance: IframeProvider | null = null;
   protected readonly windowManager: IframeManager;
-  private loginType: IframeLoginTypes = IframeLoginTypes.metamask;
+  private loginType: IframeLoginTypes = IframeLoginTypes.google;
 
   public constructor() {
     super();
@@ -57,7 +57,7 @@ export class IframeProvider extends CrossWindowProvider {
   }
 
   public override setWalletUrl(url: string): CrossWindowProvider {
-    const newUrl = `${url}/?iframeProviderLoginType=${this.loginType}`;
+    const newUrl = `${url}?iframeProviderLoginType=${this.loginType}`;
     return super.setWalletUrl(newUrl);
   }
 
@@ -67,11 +67,6 @@ export class IframeProvider extends CrossWindowProvider {
     } = {}
   ): Promise<IProviderAccount> {
     await this.windowManager.setWalletWindow();
-
-    // ensure wallet is loaded in IFrame before sending a loginRequest
-    await this.windowManager.listenOnce(
-      WindowProviderResponseEnums.handshakeResponse
-    );
 
     const account = await super.login(options);
 

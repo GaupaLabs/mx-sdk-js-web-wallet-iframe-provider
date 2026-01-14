@@ -6,5 +6,10 @@ export const iframeWindowReadyEvent = 'iframeWindowReady';
 
 export enum IframeLoginTypes {
   metamask = 'metamask',
-  passkey = 'passkey'
+  passkey = 'passkey',
+  tiktok = 'tiktok',
+  twitter = 'twitter',
+  google = 'google',
+  mail = 'mail',
+  discord = 'discord'
 }
